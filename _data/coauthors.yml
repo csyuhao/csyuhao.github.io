@@ -1,78 +1,19 @@
-"Adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Shen":
+  - firstname: ["Meng"]
+    url: https://cst.bit.edu.cn/szdw/jsml/bssds/86728e84066248b0b13bdf04f685817f.htm
 
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Zhu":
+  - firstname: ["Liehuang"]
+    url: https://cst.bit.edu.cn/szdw/jsml/bssds/2515180f56bf4a30b0bb672dfab8391d.htm
 
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Ke":
+  - firstname: ["Xu"]
+    url: http://www.thucsnet.org/xuke.html
 
-"Bach": 
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Li": 
+  - firstname: ["Qi"]
+    url: http://netsec.ccert.edu.cn/people/qli/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
-
-"Przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
-
-"Schrödinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
-
-"Lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"Planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
-
-"Moyer":
-  - firstname: ["Daniel"]
-    url: https://dcmoyer.github.io/
-
-"Golland":
-  - firstname: ["Polina"]
-    url: https://people.csail.mit.edu/polina/
-
-"Adalsteinsson":
-  - firstname: ['Elfar', "E."]
-    url: https://www.rle.mit.edu/people/directory/elfar-adalsteinsson/
-
-"Gagoski":
-  - firstname: ['Borjan', "B."]
-    url: https://scholar.google.com/citations?user=mXUhe04AAAAJ
-
-"Grant":
-  - firstname: ["P. Ellen", "Ellen", "Patricia Ellen"]
-    url: https://scholar.google.com/citations?user=W4dqZ7EAAAAJ
-
-"Turk":
-  - firstname: ["Esra Abaci", "Esra", "E. A."]
-    url: https://scholar.google.com/citations?user=HYUyyTsAAAAJ
-
-"Arefeen":
-  - firstname: ["Yamin", "Y."]
-    url: https://yaminarefeen.github.io/
-
-"Zhang":
-  - firstname: ["Molin"]
-    url: https://scholar.google.com/citations?user=M6LlDA4AAAAJ
-
-"Pauly":
-  - firstname: ["John", "John M.", "J. M."]  
-    url: https://web.stanford.edu/~pauly/
-
-"Zaharchuk":
-  - firstname: ["Greg"]
-    url: https://profiles.stanford.edu/greg-zaharchuk
-
-"Iglesias":
-  - firstname: ["Juan Eugenio", "J. E."]
-    url: https://scholar.harvard.edu/iglesias
+"Hu":
+  - firstname: ["Jiankun"]
+    url: https://research.unsw.edu.au/people/professor-jiankun-hu
