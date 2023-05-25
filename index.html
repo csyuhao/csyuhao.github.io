@@ -201,7 +201,92 @@ I am a curious, diligent and cooperative person with a strong passion for AI and
           <!-- Selected papers -->
           <h2><a href="/publications/" style="color: inherit;">Selected Publications</a></h2>
           <div class="publications">
-            <ol class="bibliography"></ol>
+            <ol class="bibliography"><li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 preview">
+<img id="2021tifspng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/2021tifs.png"><div id="2021tifspng-modal" class="modal2">
+      <span class="closeimg" onclick="document.getElementById('2021tifspng-modal').style.display='none'">×</span>
+      <div class="myCaption"></div>
+      <img class="modal-content2" id="2021tifspng-modal-img">
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("2021tifspng-modal");
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('2021tifspng');
+      var modalImg = document.getElementById("2021tifspng-modal-img");
+      var captionText = modal.getElementsByTagName('div')[0];
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = "";
+      }
+      // Get the <span> element that closes the modal
+      var span = modal.getElementsByTagName('span')[0];
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+      modal.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="shen2021effective" class="col-sm-8 col-md-9">
+    <!-- Title -->
+    <div class="title">Effective and Robust Physical-World Attacks on Deep Learning Face
+               Recognition Systems</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      <a href="https://cst.bit.edu.cn/szdw/jsml/bssds/86728e84066248b0b13bdf04f685817f.htm" rel="external nofollow noopener" target="_blank">Meng Shen</a>, Hao Yu, <a href="https://cst.bit.edu.cn/szdw/jsml/bssds/2515180f56bf4a30b0bb672dfab8391d.htm" rel="external nofollow noopener" target="_blank">Liehuang Zhu</a>, Ke Xu, and
+      <span class="more-authors" title="click to view 2 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '2 more authors' ? 'Qi Li, Jiankun Hu' : '2 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">2 more authors</span>
+</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>IEEE Transactions on Information Forensics and Security</em>, 2021
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a href="https://doi.org/10.1109/TIFS.2021.3102492" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">URL</a>
+      <a href="https://github.com/yuhaoooo/FaceAdv" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Code</a>
+    </div>
+    
+    <div class="badges">
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>
+               Deep neural networks (DNNs) have been increasingly used in face recognition (FR) systems. Recent studies, however, show that DNNs are vulnerable to adversarial examples, which potentially mislead DNN-based FR systems in the physical world. Existing attacks either generate perturbations working merely in the digital world, or rely on customized equipment to generate perturbations that are not robust in the ever-changing physical environment. In this paper, we propose FaceAdv, a physical-world attack that crafts adversarial stickers to deceive FR systems. It mainly consists of a sticker generator and a convertor, where the former can craft several stickers with different shapes while the latter aims to digitally attach stickers to human faces and provide feedback to the generator to improve the effectiveness. We conduct extensive experiments to evaluate the effectiveness of FaceAdv on attacking three typical FR systems (i.e., ArcFace, CosFace and FaceNet). The results show that compared with a state-of-the-art attack, FaceAdv can significantly improve the success rates of both dodging and impersonating attacks. We also conduct comprehensive evaluations to demonstrate the robustness of FaceAdv.
+               </p>
+    </div>
+  </div>
+</div>
+</li></ol>
           </div>
 
 
