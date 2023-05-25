@@ -8,8 +8,7 @@ profile:
   align: center
   image: profile.png
   image_circular: true # crops the image to make it circular
-  address: >
-    <p>ChangSha, China</p>
+  address: ChangSha, China
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
