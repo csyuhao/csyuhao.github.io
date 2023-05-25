@@ -17,7 +17,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Psublications | Hao  Yu</title>
+    <title>Publications | Hao  Yu</title>
     <meta name="author" content="Hao  Yu">
     <meta name="description" content="publications">
     <meta name="keywords" content="homepage">
@@ -90,7 +90,7 @@
 
               <!-- Other pages -->
               <li class="nav-item active">
-                <a class="nav-link" href="/publications/">Psublications<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/publications/">Publications<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="/cv/">CV</a>
@@ -125,7 +125,7 @@
 <div class="post">
 
     <header class="post-header">
-        <h1 class="post-title">Psublications</h1>
+        <h1 class="post-title">Publications</h1>
         <p class="post-description"><span class="star">*</span> denotes equal contribution</p>
         <!--<p class="post-description"> </p>-->
     </header>
@@ -133,20 +133,42 @@
     <article>
         <!-- _pages/publications.md -->
 
-<p>An up-to-date list is available on <a href="https://scholar.google.com/citations?user=qNk6tgcAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>.</p>
+<p>An up-to-date list is available on <a href="https://scholar.google.com/citations?user=ygRUerEAAAAJ" target="_blank" rel="noopener noreferrer">Google Scholar</a>.</p>
 
 <div class="publications">
-  <h2 class="year">2023</h2>
-  <ol class="bibliography"></ol>
-
-  <h2 class="year">2022</h2>
-  <ol class="bibliography"></ol>
-
   <h2 class="year">2021</h2>
   <ol class="bibliography"><li>
 <!-- _layouts/bib.html -->
 <div class="row">
-  <div class="col-sm-2 abbr"></div>
+  <div class="col-sm-2 preview">
+<img id="overviewpng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/overview.png"><div id="overviewpng-modal" class="modal2">
+      <span class="closeimg" onclick="document.getElementById('overviewpng-modal').style.display='none'">×</span>
+      <div class="myCaption"></div>
+      <img class="modal-content2" id="overviewpng-modal-img">
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("overviewpng-modal");
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('overviewpng');
+      var modalImg = document.getElementById("overviewpng-modal-img");
+      var captionText = modal.getElementsByTagName('div')[0];
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = "";
+      }
+      // Get the <span> element that closes the modal
+      var span = modal.getElementsByTagName('span')[0];
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+      modal.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
+</div>
 
   <!-- Entry bib key -->
   <div id="shen2021effective" class="col-sm-8 col-md-9">
@@ -176,7 +198,7 @@
     
     
     <div class="periodical">
-      <em>IEEE Trans. Inf. Forensics Secur.</em>, 2021
+      <em>IEEE Transactions on Information Forensics and Security</em>, 2021
     </div>
     <div class="periodical">
       
@@ -200,15 +222,6 @@
   </div>
 </div>
 </li></ol>
-
-  <h2 class="year">2020</h2>
-  <ol class="bibliography"></ol>
-
-  <h2 class="year">2019</h2>
-  <ol class="bibliography"></ol>
-
-  <h2 class="year">2017</h2>
-  <ol class="bibliography"></ol>
 
 
 </div>
