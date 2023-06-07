@@ -269,8 +269,8 @@ jekyll-archives:
 
 scholar:
 
-  last_name: [Hao]
-  first_name: [Yu]
+  last_name: [Yu]
+  first_name: [Hao]
 
   style: apa
   locale: en
