@@ -201,7 +201,92 @@ I am a curious, diligent and cooperative person with a strong passion for AI and
           <!-- Selected papers -->
           <h2><a href="/publications/" style="color: inherit;">Selected Publications</a></h2>
           <div class="publications">
-            <ol class="bibliography"><li>
+            <ol class="bibliography">
+<li>
+<!-- _layouts/bib.html -->
+<div class="row">
+  <div class="col-sm-2 preview">
+<img id="2023tdscpng" class="preview z-depth-1 rounded myImg" src="/assets/img/publication_preview/2023tdsc.png"><div id="2023tdscpng-modal" class="modal2">
+      <span class="closeimg" onclick="document.getElementById('2023tdscpng-modal').style.display='none'">×</span>
+      <div class="myCaption"></div>
+      <img class="modal-content2" id="2023tdscpng-modal-img">
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("2023tdscpng-modal");
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('2023tdscpng');
+      var modalImg = document.getElementById("2023tdscpng-modal-img");
+      var captionText = modal.getElementsByTagName('div')[0];
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = "";
+      }
+      // Get the <span> element that closes the modal
+      var span = modal.getElementsByTagName('span')[0];
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+      modal.onclick = function () {
+        modal.style.display = "none";
+      }
+    </script>
+</div>
+
+  <!-- Entry bib key -->
+  <div id="shen2023decision" class="col-sm-8 col-md-9">
+    <!-- Title -->
+    <div class="title">Decision-based Query Efficient Adversarial Attack via Adaptive Boundary Learning</div>
+    <!-- Author -->
+    <div class="author">
+      
+
+      <a href="https://mengshen-office.github.io/" rel="external nofollow noopener" target="_blank">Meng Shen</a>, Changyue Li, <em>Hao Yu</em>, <a href="http://netsec.ccert.edu.cn/people/qli/" rel="external nofollow noopener" target="_blank">Qi Li</a>, and
+      <span class="more-authors" title="click to view 2 more authors" onclick="
+                var element = $(this);
+                element.attr('title', '');
+                var more_authors_text = element.text() == '2 more authors' ? 'Liehuang Zhu, Ke Xu' : '2 more authors';
+                var cursorPosition = 0;
+                var textAdder = setInterval(function(){
+                  element.text(more_authors_text.substring(0, cursorPosition + 1));
+                  if (++cursorPosition == more_authors_text.length){
+                    clearInterval(textAdder);
+                  }
+              }, '10');
+              ">2 more authors</span>
+</div>
+
+    <!-- Journal/Book title and date -->
+    
+    
+    <div class="periodical">
+      <em>IEEE Transactions on Dependable and Secure Computing</em>, 2023
+    </div>
+    <div class="periodical">
+      
+    </div>
+
+    <!-- Links/Buttons -->
+    <div class="links">
+      <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+      <a href="https://doi.org/10.1109/TDSC.2023.3289298" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">URL</a>
+    </div>
+    
+    <div class="badges">
+    </div>
+
+    <!-- Hidden abstract block -->
+    <div class="abstract hidden">
+      <p>
+               Decision-based adversarial attacks pose a severe threat to real-world applications of Deep Neural Networks (DNNs), as attackers are assumed to have no prior knowledge about target model except hard labels of model outputs. Existing decision-based attacks require a large number of queries on the target model for a successful attack. In this paper, we propose DEAL, a decision-based query efficient adversarial attack based on adaptive boundary learning. DEAL relies on a local model named boundary learner, which is initialized through meta-learning mechanism to obtain the ability to adapt the decision boundaries to a new model. We conduct extensive experiments to evaluate the effectiveness of DEAL, which demonstrates that it outperforms 8 state-of-the-art attacks. Specifically for the evaluation on CIFAR-10 dataset, DEAL can achieve similar attack success rates with a maximum reduction in average number of queries of 51% in untargeted attacks and 14% in targeted attacks, respectively.
+               </p>
+    </div>
+  </div>
+</div>
+</li>
+<li>
 <!-- _layouts/bib.html -->
 <div class="row">
   <div class="col-sm-2 preview">
@@ -286,7 +371,8 @@ I am a curious, diligent and cooperative person with a strong passion for AI and
     </div>
   </div>
 </div>
-</li></ol>
+</li>
+</ol>
           </div>
 
 
@@ -317,7 +403,7 @@ I am a curious, diligent and cooperative person with a strong passion for AI and
     <!-- Footer -->    
     <footer class="fixed-bottom">
       <div class="container mt-0">
-        © Copyright 2023 Hao  Yu. Last updated: June 07, 2023.
+        © Copyright 2023 Hao  Yu. Last updated: June 27, 2023.
       </div>
     </footer>
 
