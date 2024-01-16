@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin SEO -->
+
+
+
+
+
+<title>Amelie Chi Zhou - Homepage</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en">
+<meta property="og:site_name" content="Amelie Chi Zhou">
+<meta property="og:title" content="Amelie Chi Zhou">
+
+
+  <link rel="canonical" href="https://amelieczhou.github.io/">
+  <meta property="og:url" content="https://amelieczhou.github.io/">
+
+
+
+  <meta property="og:description" content="Department of Computer Science">
+
+
+
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+<head>
+  <base target="_blank">
+</head>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+<link rel="manifest" href="images/site.webmanifest">
+
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="assets/css/academicons.css"/>
+
+<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+
+<h1 id="-publications">📝 Publications</h1>
+
+<p> My full publication list can be found here: <a href="https://scholar.google.com.sg/citations?user=pR-IEhcAAAAJ&hl=en">[Google Scholar]</a><a href ="https://dblp.org/pid/131/6619.html">[DBLP]</a>
+<p> Below are some of our ongoing projects. Results of these projects include technical papers, patents and open-source tools.
+<p> Our projects have been supported by NSFC, NSFC-Guangdong, SZSTI and industrial fundings such as Tencent Rhino-Bird and Huawei.
+
+<H3 id="graph"><font color="darkblue">Graph Computing</font></H3>
+
+
+<div class="center">
+<table width="100%">
+<tbody>
+<tr>
+<!-- <td><img height="100" width="200" src="images/rlcut.png" alt="RLCut" style="border:1px solid silver;"/></td>
+<td>&nbsp; &nbsp; &nbsp; </td>
+<td align="justify">
+  <strong>Adaptive Graph Partitioning:</strong> Graph partitioning is important to the performance of distributed graph processing. However, when dealing with large graphs, there is a trade-off between partitioning effectiveness and efficiency. This problem further complicates for dynamic graphs with different changing frequencies. In this project, we innovatively proposed to adopt multi-agent reinforcement learning to address the graph partitioning problem. With a
+sampling-based technique to adaptively decide the number of agents participating in the training, we are able to adaptively achieve good balance between graph partitioning time and quality.
+  <p>Results: ICDCS'17 <a href="pdfs/amelieICDCS17.pdf">[pdf]</a>, TPDS 2020 <a href="pdfs/tpds19-geograph.pdf">[pdf]</a>, ICDE'22 <a href="pdfs/RLCut-ICDE.pdf">[pdf]</a>
+</td> -->
+<td><img height="100" width="200" src="images/rlcut.png" alt="RLCut" style="border:1px solid silver;" align="left" hspace="10" vspace="10"/>
+  <strong>Adaptive Graph Partitioning:</strong> Graph partitioning is important to the performance of distributed graph processing. However, when dealing with large graphs, there is a trade-off between partitioning effectiveness and efficiency. This problem further complicates for dynamic graphs with different changing frequencies. In this project, we innovatively proposed to adopt multi-agent reinforcement learning to address the graph partitioning problem. With a
+sampling-based technique to adaptively decide the number of agents participating in the training, we are able to adaptively achieve good balance between graph partitioning time and quality.
+  <p><b>Results:</b> ICDCS'17 <a href="pdfs/amelieICDCS17.pdf">[pdf]</a>, TPDS 2020 <a href="pdfs/tpds19-geograph.pdf">[pdf]</a>, ICDE'22 <a href="pdfs/RLCut-ICDE.pdf">[pdf]</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br/>
+
+<div class="center">
+<table width="100%">
+<tbody>
+<tr>
+<td align="justify"><img height="100" width="200" src="images/pgpregel.png" alt="PGPregel" style="border:1px solid silver;" align="left" hspace="10" vspace="10"/>
+  <strong>PGPregel:</strong> In this project, we propose an end-to-end system for privacy-preserving graph processing in geo-distributed data centers. PGPregel adopts Differential Privacy (DP) to ensure privacy requirements casted by GDPR, and incorporates sampling and combiners techniques to make DP practical. To the best of our knowledge, this is <i>the first of its kind</i> to consider system latency, utility and privacy at the same time for geo-distributed graph processing. Currently, we are working on how to decide the hyperparameters of PGPregel (e.g., sampling rate, number of combiners) in an automatic and adaptive way.
+  <p> <b>Results:</b> SoCC'22 <a href="pdfs/PGPregel-SoCC22.pdf">[pdf]</a><a href="https://github.com/PGPregel/PGPregel">[code]</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<br/>
+
+<hr>
+
+
+<H3 id="cloud"><font color="darkblue">Cloud Computing</font></H3>
+
+<div class="center">
+<table width="100%">
+<tbody>
+<tr>
+<td align="justify"><img height="100" width="200" src="images/farspot.png" alt="FarSpot" style="border:1px solid silver;" align="left" hspace="10" vspace="10"/>
+  <strong>FarSpot:</strong> Public clouds offer various pricing schemes to satisfy different user requirements (e.g., on-demand, reservation, spot). Among them, spot instances offer much cheaper resources compared to on-demand instances, with the risk of unexpected instance failures when out-of-bid events occur. To take advantage of the low prices of spot instances while providing reliable execution for applications, in this project, we propose an ensemble-based predictor to accurately forecast spot price variations in near future and an instance migration strategy that can dynamically and efficiently migrate tasks from instances that are going to fail. This project offers a practical solution for long-running tasks to execute on spot instances with a low cost.
+  <p> <b>Results:</b> SC'15 <a href="pdfs/SOMPI.pdf">[pdf]</a>, TCC 2016 <a href="pdfs/TCC16.pdf">[pdf]</a>, TPDS 2022 <a href="pdfs/FarSpot-TPDS22.pdf">[pdf]</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<br/>
+
+<div class="center">
+<table width="100%">
+<tbody>
+<tr>
+<td align="justify"><img height="100" width="200" src="images/warmstart.png" alt="MLCR" style="border:1px solid silver;" align="left" hspace="10" vspace="10"/>
+  <strong>Multi-Layer Container Reuse (MLCR):</strong> In serverless computing, cold-start latency of containers is a major challenge to improving the performance of serverless applications. Existing techniques proposed to reuse warm containers in the platform to mitigate cold-start latency of functions to improve overall application performance. However, the utilizations of warm containers in existing systems are still low due to the complexity of real serverless workloads. In this project, we propose to reuse containers at multiple layers to greatly improve warm container utilization. Furthermore, we design a public benchmark named FStartBench for evaluating the effectiveness of different function warm start strategies.
+  <p> <b>Results:</b> FStartBench <a href="https://github.com/PGPregel/PGPregel">[code]</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br/>
+
+
+<hr>
+
+<H3 id="storage"><font color="darkblue">Storage and I/O</font></H3>
+
+<div class="center">
+<table width="100%">
+<tbody>
+<tr>
+<td align="justify"><img height="100" width="200" src="images/io-scheduling.png" alt="MLCR" style="border:1px solid silver;" align="left" hspace="10" vspace="10"/>
+  <strong>Interference-aware I/O Scheduling:</strong> In HPC systems, concurrent I/Os lead to resource contention and unavoidable I/O interferences. The degree of performance degradation caused by interferences is hard to predict due to the different I/O patterns, hardware features and I/O scheduling policies. To improve system performance, we have strived to design novel I/O scheduling mechanisms to minimize interferences, through analyzing workload I/O patterns and the read/write interference features of underlying storage medium. We are collaborating with National Supercomputing Centre in Shenzhen to make our strategies practical and applicable in real systems.  
+  <p> <b>Results:</b> TPDS 2015 <a href="pdfs/ssd-TPDS15.pdf">[pdf]</a>, CLUSTER'17 <a href="pdfs/Cluster2017.pdf">[pdf]</a>, FGCS 2018 <a href="pdfs/fgcs18.pdf">[pdf]</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+
+  </body>
+</html>
