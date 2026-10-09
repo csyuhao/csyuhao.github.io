@@ -80,6 +80,7 @@
 						<li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Changsha, China</li>
 						<li><a href="mailto:csyuhao@csu.edu.cn"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i>csyuhao@csu.edu.cn</a></li>
 						<li><a href="https://orcid.org/0000-0001-9044-4841" target="_blank" rel="noopener noreferrer"><span class="orcid-mark" aria-hidden="true">iD</span>ORCID</a></li>
+						<li><a href="https://scholar.google.com/citations?user=ygRUerEAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar" aria-hidden="true"></i>Google Scholar</a></li>
 					</ul>
 				</div>
 			</div>
@@ -163,8 +164,9 @@
 					success: function (data) {
 						var publicationPage = new DOMParser().parseFromString(data, "text/html").querySelector(".publications-page");
 						if (!publicationPage) { window.location.href = "publications.html"; return; }
-						$(".page__content").empty().append($("<div>").addClass("publications-page").html(publicationPage.innerHTML));
-						updatePublicationCounts(document.querySelector(".page__content"));
+						var publicationContent = $("<div>").addClass("publications-page").html(publicationPage.innerHTML);
+						$(".page__content").empty().append(publicationContent);
+						loadPublications(publicationContent[0]);
 						setActive("publicationsLink");
 					},
 					error: function () {
