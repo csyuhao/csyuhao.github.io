@@ -33,13 +33,22 @@ http.createServer((request, response) => {
     response.writeHead(403).end();
     return;
   }
-  fs.readFile(filename, (error, data) => {
-    if (error) {
-      response.writeHead(error.code === 'ENOENT' ? 404 : 500).end();
+  fs.stat(filename, (statError, stats) => {
+    if (statError) {
+      response.writeHead(statError.code === 'ENOENT' ? 404 : 500).end();
       return;
     }
-    response.writeHead(200, { 'Content-Type': types[path.extname(filename)] || 'application/octet-stream' });
-    response.end(data);
+    fs.readFile(filename, (error, data) => {
+      if (error) {
+        response.writeHead(error.code === 'ENOENT' ? 404 : 500).end();
+        return;
+      }
+      response.writeHead(200, {
+        'Content-Type': types[path.extname(filename)] || 'application/octet-stream',
+        'Last-Modified': stats.mtime.toUTCString()
+      });
+      response.end(request.method === 'HEAD' ? undefined : data);
+    });
   });
 }).listen(port, '127.0.0.1', () => {
   console.log(`Preview: http://127.0.0.1:` + port + '/');

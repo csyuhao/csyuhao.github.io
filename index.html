@@ -141,6 +141,10 @@
 		</article>
 	</div>
 
+	<footer class="site-updated" id="site-updated" hidden>
+		Last updated: <time id="site-updated-time"></time> (UTC+8)
+	</footer>
+
 	<script src="assets/js/publications.js"></script>
 	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 	<script>
@@ -202,6 +206,25 @@
 				setActive("homeLink");
 			});
 		});
+	</script>
+	<script>
+		fetch("index.html", { method: "HEAD", cache: "no-store" })
+			.then(function (response) {
+				if (!response.ok) throw new Error("Could not read update time");
+				return response.headers.get("Last-Modified");
+			})
+			.then(function (value) {
+				var date = new Date(value);
+				if (!value || isNaN(date.getTime())) return;
+				var time = document.getElementById("site-updated-time");
+				time.dateTime = date.toISOString();
+				time.textContent = new Intl.DateTimeFormat("sv-SE", {
+					timeZone: "Asia/Shanghai", year: "numeric", month: "2-digit",
+					day: "2-digit", hour: "2-digit", minute: "2-digit", hour12: false
+				}).format(date);
+				document.getElementById("site-updated").hidden = false;
+			})
+			.catch(function () {});
 	</script>
 
 </body>
