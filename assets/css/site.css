@@ -189,6 +189,11 @@ a:focus-visible { outline: 3px solid #75c8c6; outline-offset: 3px; border-radius
 .page__content { overflow-wrap: anywhere; }
 .page__content p, .page__content li { font-size: .98rem; line-height: 1.8; }
 .page__content p { margin-bottom: 1rem; }
+.page__content .biography {
+  text-align: justify;
+  text-align-last: left;
+  hyphens: auto;
+}
 .page__content a { text-decoration-color: #a8d2d0; text-underline-offset: 3px; }
 .page__content h1 {
   margin: 2.5rem 0 1rem;
